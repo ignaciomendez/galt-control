@@ -1,0 +1,3 @@
+galt_main_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GaltMainBundle:Default:index }

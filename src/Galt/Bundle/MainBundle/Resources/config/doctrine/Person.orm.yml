@@ -1,0 +1,11 @@
+Galt\Bundle\MainBundle\Entity\Person:
+    type: entity
+    table: null
+    #repositoryClass: Galt\Bundle\GaltMainBundle\Entity\PersonRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
