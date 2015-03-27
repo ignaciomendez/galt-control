@@ -1,0 +1,3 @@
+galt_ticket_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: GaltTicketBundle:Default:index }

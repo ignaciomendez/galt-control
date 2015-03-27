@@ -1,0 +1,4 @@
+services:
+#    galt_ticket.example:
+#        class: Galt\Bundle\TicketBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
