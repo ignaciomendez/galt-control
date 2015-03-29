@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Galt Control{% endblock %}</title>
+        {% block javascripts %}
+            <script src="{{ asset('js/require.js') }}"></script>
+            <script>
+                requirejs.config({
+                    baseUrl: '/js',
+                    paths:{
+                        jquery: 'jquery.min',
+                        foundation: 'foundation.min'
+                    },
+                    shim: {
+                        foundation: ['jquery']
+                    }
+                });
+                require(['app/homepage']);
+            </script>
+        {% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('css/foundation.css') }}" rel="stylesheet">
+        {% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
     </body>
 </html>
