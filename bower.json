@@ -1,0 +1,23 @@
+{
+  "name": "galt-control",
+  "version": "0.1",
+  "homepage": "https://github.com/milardovich/galt-control",
+  "authors": [
+    "Sergio Milardovich <sergio.milardovich@gmail.com>"
+  ],
+  "description": "Galt Control Pannel",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.1",
+    "requirejs": "~2.1.16"
+  }
+}
