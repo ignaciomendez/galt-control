@@ -1,0 +1,23 @@
+{
+  "name": "galt-control",
+  "version": "0.0.0",
+  "description": "galt-control ============",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.8.11",
+    "gulp-sass": "~1.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/milardovich/galt-control.git"
+  },
+  "author": "Sergio Milardovich",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/milardovich/galt-control/issues"
+  }
+}
