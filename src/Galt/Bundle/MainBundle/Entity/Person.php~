@@ -37,13 +37,13 @@ class Person extends BaseUser
     }
 
     /**
-     * @ORM\OneToOne(targetEntity="Galt\Bundle\TicketBundle\Entity\Ticket", inversedBy="assigned")
+     * @ORM\OneToMany(targetEntity="Galt\Bundle\TicketBundle\Entity\Ticket", mappedBy="assigned")
      */
     protected $tickets;
 
 
     /**
-     * @ORM\OneToOne(targetEntity="Galt\Bundle\TicketBundle\Entity\Ticket", inversedBy="persons")
+     * @ORM\OneToMany(targetEntity="Galt\Bundle\TicketBundle\Entity\Ticket", mappedBy="persons")
      */
     protected $authored;
 
@@ -69,5 +69,28 @@ class Person extends BaseUser
     public function getTickets()
     {
         return $this->tickets;
+    }
+
+    /**
+     * Set authored
+     *
+     * @param \Galt\Bundle\TicketBundle\Entity\Ticket $authored
+     * @return Person
+     */
+    public function setAuthored(\Galt\Bundle\TicketBundle\Entity\Ticket $authored = null)
+    {
+        $this->authored = $authored;
+
+        return $this;
+    }
+
+    /**
+     * Get authored
+     *
+     * @return \Galt\Bundle\TicketBundle\Entity\Ticket 
+     */
+    public function getAuthored()
+    {
+        return $this->authored;
     }
 }
