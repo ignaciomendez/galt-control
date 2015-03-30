@@ -34,7 +34,7 @@ Make sure you have the **Requirements** listed above installed.
        3.3.1.`php app/console doctrine:database:create`
        3.3.1.`php app/console doctrine:schema:create`
 
- 4. Install node dependencies and run grunt tasks.
+ 4. Install node dependencies and run gulp tasks.
 
    4.1.  Install node dependencies `npm install`.
 
