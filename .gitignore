@@ -9,11 +9,13 @@
 /composer.phar
 /vendor/
 /web/bundles/
+/web/vendor/*
 /build/
 /vendor/
 /.idea/
 /vagrant/.vagrant/
 .sass-cache/
+.idea/
 node_modules/
 web/css/generated
 web/js/generated
