@@ -34,3 +34,5 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: Galt\Bundle\MainBundle\Entity\Person
+    group:
+        group_class: Galt\Bundle\MainBundle\Entity\Group

@@ -29,3 +29,11 @@ fos_user_resetting:
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
+
+galt_main_dashboard:
+    path:     /
+    defaults: { _controller: GaltMainBundle:Dashboard:index }
+
+galt_tickets_support:
+    path:     /support
+    defaults: { _controller: GaltTicketBundle:Support:index }
