@@ -1,6 +1,10 @@
 var gulp = require('gulp');
 
 gulp.task('default', function () {
+    gulp.start('install');
+});
+
+gulp.task('install', function () {
     gulp.start('sass','js-copy','css-copy');
 });
 
